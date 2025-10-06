@@ -455,6 +455,7 @@ section.in-view .fade-in {
         right: auto;
         transform: translateX(-50%);
         width: auto;
+        max-width: 95vw;
         border-radius: 26px;
         justify-content: center;
         padding: 0.5rem;
@@ -465,6 +466,7 @@ section.in-view .fade-in {
     }
     .section-indicator ul {
         justify-content: center;
+        flex-wrap: wrap;
     }
     .section-indicator li {
         margin: 0;
