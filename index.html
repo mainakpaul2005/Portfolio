@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of Mainak Paul, an IT undergraduate and software developer specializing in secure, scalable, and user-centric digital solutions.">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>M.</text></svg>">
     <title>Mainak Paul | Software Developer</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -11,21 +13,33 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
 </head>
 <body>
+<div class="preloader">
+    <div class="preloader-logo">M.</div>
+</div>
+<div class="cursor"></div>
 <div class="section-indicator">
     <div class="logo">M.</div>
-    <ul>
-        <li><a href="#hero">Home</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#education">Education</a></li>
-        <li><a href="#contact">Contact</a></li>
-    </ul>
+    <nav class="main-nav">
+        <ul>
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="active-pill"></div>
+    </nav>
+    <button class="hamburger-menu" aria-label="Toggle navigation menu">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
 </div>
 <main class="scroll-container">
     <!-- HERO -->
     <section id="hero" class="fullscreen-section hero">
         <div class="hero-content">
-            <h1 class="fade-in">Mainak Paul</h1>
+            <h1 class="text-shuffle" data-text="Mainak Paul">Mainak Paul</h1>
             <p class="fade-in">IT undergraduate and software developer focused on building secure, scalable, and user-centric digital solutions.</p>
         </div>
         <div class="scroll-indicator fade-in">
@@ -45,7 +59,7 @@
             <div class="project-text">
                 <span class="project-number">01</span>
                 <h2>WayStay</h2>
-                <p>
+                <p class="animate-text">
                     A full-stack web platform simplifying property booking and management for both travelers and hosts.
                     WayStay offers secure user authentication, an intuitive search and filter system, real-time room availability, and a built-in booking confirmation workflow.
                     It also features a responsive design optimized for all screen sizes, and a MySQL-backed dashboard for property owners to manage listings, prices, and reservations.
@@ -59,8 +73,8 @@
                     <span>MySQL</span>
                 </div>
                 <div class="project-links">
-                    <a href="#" class="btn">Show Code</a>
-                    <a href="#" class="btn btn--primary">Demo</a>
+                    <a href="#" class="btn">Show Code <i class="fas fa-code"></i></a>
+                    <a href="#" class="btn btn--primary">Demo <i class="fas fa-external-link-alt"></i></a>
                 </div>
             </div>
             <div class="project-visual">
@@ -75,7 +89,7 @@
             <div class="project-text">
                 <span class="project-number">02</span>
                 <h2>SanskritiAR</h2>
-                <p>
+                <p class="animate-text">
                     An immersive augmented reality mobile application that revives Indian cultural heritage through interactive 3D visualizations and AI-powered narration.
                     SanskritiAR enables users to explore monuments and artifacts by scanning markers, triggering real-time 3D renderings and audiovisual storytelling generated using ARCore and TensorFlow.
                     It combines computer vision with deep learning to detect objects and provide context-aware information overlays, making cultural learning engaging and accessible.
@@ -88,8 +102,8 @@
                     <span>TensorFlow</span>
                 </div>
                 <div class="project-links">
-                    <a href="#" class="btn">Show Code</a>
-                    <a href="#" class="btn btn--primary">Demo</a>
+                    <a href="#" class="btn">Show Code <i class="fas fa-code"></i></a>
+                    <a href="#" class="btn btn--primary">Demo <i class="fas fa-external-link-alt"></i></a>
                 </div>
             </div>
             <div class="project-visual">
@@ -104,7 +118,7 @@
             <div class="project-text">
                 <span class="project-number">03</span>
                 <h2>Fraud Sentry</h2>
-                <p>
+                <p class="animate-text">
                     A machine-learning-based fraud detection and authentication system built to identify unusual user activity in real time.
                     Fraud Sentry integrates multifactor authentication, behavioral analysis, and risk scoring models to protect online transactions.
                     The backend (Flask + SQLite) manages user sessions, data logs, and ML model predictions, while the web dashboard provides interactive analytics for administrators.
@@ -117,8 +131,8 @@
                     <span>Machine Learning</span>
                 </div>
                 <div class="project-links">
-                    <a href="#" class="btn">Show Code</a>
-                    <a href="#" class="btn btn--primary">Demo</a>
+                    <a href="#" class="btn">Show Code <i class="fas fa-code"></i></a>
+                    <a href="#" class="btn btn--primary">Demo <i class="fas fa-external-link-alt"></i></a>
                 </div>
             </div>
             <div class="project-visual">
@@ -133,8 +147,8 @@
             <h2>Technical Skills</h2>
             <div class="skills-grid">
                 <div class="skill-card">
-                    <h3>Frontend Development</h3>
-                    <p class="skill-description">I build responsive, intuitive, and dynamic user interfaces that provide a seamless user experience across all devices.</p>
+                    <h3><i class="fas fa-code"></i> Frontend Development</h3>
+                    <p class="skill-description animate-text">I build responsive, intuitive, and dynamic user interfaces that provide a seamless user experience across all devices.</p>
                     <div class="skills-list">
                         <span>HTML</span>
                         <span>CSS</span>
@@ -144,8 +158,8 @@
                     </div>
                 </div>
                 <div class="skill-card">
-                    <h3>Backend Engineering</h3>
-                    <p class="skill-description">I design and build robust, scalable, and secure server-side applications and APIs to power the digital backend.</p>
+                    <h3><i class="fas fa-server"></i> Backend Engineering</h3>
+                    <p class="skill-description animate-text">I design and build robust, scalable, and secure server-side applications and APIs to power the digital backend.</p>
                     <div class="skills-list">
                         <span>Python</span>
                         <span>Flask</span>
@@ -155,8 +169,8 @@
                     </div>
                 </div>
                 <div class="skill-card">
-                    <h3>Data Science & AI</h3>
-                    <p class="skill-description">I leverage machine learning and data analysis to extract valuable insights and build intelligent, data-driven applications.</p>
+                    <h3><i class="fas fa-brain"></i> Data Science & AI</h3>
+                    <p class="skill-description animate-text">I leverage machine learning and data analysis to extract valuable insights and build intelligent, data-driven applications.</p>
                     <div class="skills-list">
                         <span>Machine Learning</span>
                         <span>TensorFlow</span>
@@ -165,8 +179,8 @@
                     </div>
                 </div>
                 <div class="skill-card">
-                    <h3>Tools & Platforms</h3>
-                    <p class="skill-description">I am proficient with a variety of modern development tools and platforms to streamline workflows and build efficiently.</p>
+                    <h3><i class="fas fa-tools"></i> Tools & Platforms</h3>
+                    <p class="skill-description animate-text">I am proficient with a variety of modern development tools and platforms to streamline workflows and build efficiently.</p>
                     <div class="skills-list">
                         <span>Git</span>
                         <span>Firebase</span>
@@ -187,7 +201,7 @@
             <div class="skills-grid">
                 <div class="skill-card">
                     <h3>Bachelor of Technology (B.Tech)</h3>
-                    <p class="skill-description">Information Technology. Currently, a second-year student building a strong foundation in core computer science principles, including data structures, algorithms, and software engineering.</p>
+                    <p class="skill-description animate-text">Information Technology. Currently, a second-year student building a strong foundation in core computer science principles, including data structures, algorithms, and software engineering.</p>
                     <div class="skills-list">
                         <span>Placeholder University</span>
                         <span>2023 - Present</span>
@@ -195,7 +209,7 @@
                 </div>
                 <div class="skill-card">
                     <h3>Higher Secondary (10+2)</h3>
-                    <p class="skill-description">Completed my higher secondary education with a focus on science and mathematics, developing strong analytical and problem-solving skills.</p>
+                    <p class="skill-description animate-text">Completed my higher secondary education with a focus on science and mathematics, developing strong analytical and problem-solving skills.</p>
                     <div class="skills-list">
                         <span>Placeholder School</span>
                         <span>Completed 2023</span>
@@ -214,12 +228,12 @@
                     <form action="mailto:your-email@example.com" method="post" enctype="text/plain">
                         <input type="email" name="email" placeholder="Your Email" required>
                         <textarea name="message" placeholder="Your Message" required></textarea>
-                        <button type="submit" class="btn btn--primary">Send Email</button>
+                        <button type="submit" class="btn btn--primary">Send Email <i class="fas fa-paper-plane"></i></button>
                     </form>
                 </div>
                 <div class="contact-info">
                     <h2>Connect with Me</h2>
-                    <p>
+                    <p class="animate-text">
                         I’m an Information Technology undergraduate with a strong passion for developing intelligent, secure, and high-performance applications.
                         My primary interests lie in backend development, data-driven systems, and AI integration for practical problem-solving.
                     </p>
@@ -233,6 +247,21 @@
         </div>
     </section>
 </main>
+
+<nav class="mobile-nav">
+    <ul class="mobile-nav-list">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="mobile-social-links">
+        <a href="#" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+        <a href="#" target="_blank" rel="noopener noreferrer
+        "><i class="fab fa-github"></i></a>
+    </div>
+</nav>
 
 <script src="script.js"></script>
 </body>
